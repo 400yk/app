@@ -2,9 +2,9 @@
 <h1>Welcome back!</h1>
 
 <% else %>
-
+<div class="hero-unit">
 <h1>Welcome to my app!</h1>
 <p>Sign up here.</p>
 <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-large" %>
-<%= image_tag "rails.png" %>
+</div>
 <% end %>
