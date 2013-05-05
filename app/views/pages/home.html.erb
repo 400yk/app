@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+<h1>Welcome back!</h1>
+
+<% else %>
+
+<h1>Welcome to my app!</h1>
+<p>Sign up here.</p>
+<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-large" %>
+<% end %>
